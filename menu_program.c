@@ -1,5 +1,5 @@
 /**
-Nama: Kurnia Ramadhan Putra
+Nama: Deprinda/fauzan
 Tanggal: 19-02-2020
 Nama Program: menu_program.c
 */
@@ -11,6 +11,9 @@ double tambah(double a, double b) {
 double kurang(double a, double b) {
 	return a - b;
 }
+double bagi(double a, double b) {
+	return a / b;
+}
 
 int main() {
 	int pilihan;
@@ -20,6 +23,7 @@ int main() {
 	printf("----------------------\n");
 	printf("1. Tambah\n");
 	printf("2. Kurang\n");
+	printf("3. Bagi\n");
 
 	printf("Masukkan pilihan Anda : ");
 	scanf("%d", &pilihan);
@@ -39,6 +43,10 @@ int main() {
 		case 2:
 			printf("Hasil pengurangan : ");
 			printf("%.1f\n", kurang(angka1, angka2));
+		break;
+		case 3:
+            		printf("Hasil pembagian : ");
+            		printf("%.1f\n", bagi(angka1, angka2));
 		break;
 	}
 	return 0;
